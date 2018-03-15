@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/time_picker_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="请选择日期"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+      
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="年"
+            android:textColor="#000000"
+            android:textSize="20dip"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="月"
+            android:textColor="#000000"
+            android:textSize="20dip"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="#000000"
+            android:textSize="20dip"/> 
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="时"
+            android:textColor="#000000"
+            android:textSize="20dip"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分"
+            android:textColor="#000000"
+            android:textSize="20dip"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="秒"
+            android:textColor="#000000"
+            android:textSize="20dip"
+            android:visibility="gone"
+            />                 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        
+        <com.bhxx.xs_family.DateDialog.WheelView android:id="@+id/yearwheel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <com.bhxx.xs_family.DateDialog.WheelView android:id="@+id/monthwheel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <com.bhxx.xs_family.DateDialog.WheelView android:id="@+id/daywheel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <com.bhxx.xs_family.DateDialog.WheelView android:id="@+id/hourwheel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/> 
+        <com.bhxx.xs_family.DateDialog.WheelView android:id="@+id/minutewheel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/> 
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:background="#eeeeee"
+        />
+</LinearLayout>

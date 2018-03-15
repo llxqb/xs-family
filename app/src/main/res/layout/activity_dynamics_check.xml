@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_grey_bg">
+
+        <ImageView
+            android:id="@+id/my_dynamicscheck_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态审核"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/my_dynamicscheck_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right_siftings"
+            android:layout_marginRight="@dimen/com_left_right"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_grey_bg"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/my_dynamicscheck_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/height_80px"
+            android:layout_marginRight="@dimen/height_80px"
+            android:theme="@style/Theme.AppCompat"
+            app:tabIndicatorColor="@color/app_grey"
+            app:tabSelectedTextColor="@color/app_grey"
+            app:tabTextColor="@color/text_3333">
+        </android.support.design.widget.TabLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_dynamicscheck_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

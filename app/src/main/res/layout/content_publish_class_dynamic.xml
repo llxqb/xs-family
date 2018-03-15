@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_grey"
+        android:text="提交" />
+
+
+    <RelativeLayout
+        android:id="@+id/uploadPictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submit"
+        android:layout_marginBottom="@dimen/com_left_right">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <TextView
+            android:id="@+id/my_publishclass_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:text="请添加班级动态图片"
+            android:textColor="@color/text_little_black"
+            android:textSize="@dimen/sp_34px" />
+
+        <com.bhxx.xs_family.views.MyGridView
+            android:id="@+id/my_class_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_publishclass_photo"
+            android:layout_marginBottom="@dimen/height_20px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/uploadPictureLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:background="@color/com_grey_bg">
+
+            <ImageView
+                android:id="@+id/my_publishclass_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/com_left_right"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="发布班级动态"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_34px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="标题"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_34px" />
+
+            <EditText
+                android:id="@+id/my_publishclass_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入标题"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/title"
+                android:background="@color/white"
+                android:textSize="@dimen/sp_34px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:text="请添加一张主图图片"
+            android:textColor="@color/text_little_black"
+            android:textSize="@dimen/sp_34px" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginTop="@dimen/height_20px">
+
+            <ImageView
+                android:id="@+id/main_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/photos_up" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_30px"
+            android:background="@color/com_line_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_20px"
+            android:background="@color/com_line_bg" />
+
+        <EditText
+            android:id="@+id/my_publishclass_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="请输入内容..."
+            android:padding="@dimen/com_left_right"
+            android:textColor="@color/text_little_black"
+            android:gravity="left|top"
+            android:textSize="@dimen/sp_34px" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

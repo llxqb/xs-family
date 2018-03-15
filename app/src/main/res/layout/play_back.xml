@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.hikvision.sdk.playback.PlayBackActivity" >
+
+    <RelativeLayout
+        android:id="@+id/playBackSurfaceViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/playBackControlLayout"
+        android:layout_marginTop="5dp"
+        android:layout_weight="4" >
+
+        <com.hikvision.sdk.widget.CustomSurfaceView
+            android:id="@+id/playbackSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/com_grey_bg"
+            />
+
+        <ProgressBar
+            android:id="@+id/playBackProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/progress_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:progressDrawable="@drawable/remote_seekbar_style"
+        android:thumb="@drawable/remote_seekbar_thumb" />
+
+    <RadioGroup
+        android:id="@+id/rg_storage_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/playBackControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/playBackStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="开始" />
+
+            <Button
+                android:id="@+id/playBackPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="暂停" />
+
+            <Button
+                android:id="@+id/playBackStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="停止" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/playBackCapture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="抓拍" />
+
+            <Button
+                android:id="@+id/playBackRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="录像" />
+
+            <Button
+                android:id="@+id/playBackRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="音频" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/live_start_play"
+        android:text="电子放大" />
+
+</LinearLayout>

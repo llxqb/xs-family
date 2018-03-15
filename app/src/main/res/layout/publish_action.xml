@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:background="@color/com_grey_bg">
+
+            <ImageView
+                android:id="@+id/my_addaction_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/com_left_right"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="发布活动"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_34px" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submit"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="@dimen/com_left_right"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/my_addaction_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/com_left_right"
+                android:paddingTop="@dimen/com_left_right">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="标题"
+                    android:textColor="@color/text_little_black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <EditText
+                    android:id="@+id/publish_action_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/com_left_right"
+                    android:layout_toRightOf="@id/title"
+                    android:background="@null"
+                    android:hint="请输入活动标题"
+                    android:textSize="@dimen/sp_30px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_160px">
+
+                <TextView
+                    android:id="@+id/publish_action_createtime"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="活动起止时间"
+                    android:textColor="@color/text_little_black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/publish_action_createtime"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/publish_action_starttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/publish_action_starttimeTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:text="请选择活动开始时间"
+                            android:textSize="@dimen/sp_30px" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/com_left_right"
+                            android:src="@mipmap/home_morearrow" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/publish_action_endtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/com_left_right"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/publish_action_endtimeTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:text="请选择活动结束时间"
+                            android:textSize="@dimen/sp_30px" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/com_left_right"
+                            android:src="@mipmap/home_morearrow" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/my_addaction_applyEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_title_height">
+
+                <TextView
+                    android:id="@+id/endtime"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="报名截止时间"
+                    android:textColor="@color/text_little_black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:id="@+id/publish_action_applyEndTimeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/endtime"
+                    android:gravity="center_vertical"
+                    android:text="请填写活动报名截止时间"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/com_left_right"
+                    android:src="@mipmap/home_morearrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/my_addaction_humannum"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_title_height">
+
+                <TextView
+                    android:id="@+id/humannum"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="人数限制"
+                    android:textColor="@color/text_little_black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <TextView
+                    android:id="@+id/human_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/humannum"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+                    android:textSize="@dimen/sp_30px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/com_left_right"
+                    android:src="@mipmap/home_morearrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/height_30px"
+                android:background="@color/com_line_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/height_20px"
+                android:text="请添加一张主图图片"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_34px" />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginBottom="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_20px"
+                >
+
+                <ImageView
+                    android:id="@+id/main_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/photos_up" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/com_line_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/height_30px"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/my_addaction_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_216px"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/com_left_right"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:background="@color/white"
+                    android:hint="请详细描述活动内容时间地点等信息..."
+                    android:textColor="@color/text_little_black"
+                    android:gravity="left|top"
+                    android:textSize="@dimen/sp_34px" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/height_30px"
+                android:background="@color/com_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/uploadPictureLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:text="请添加活动图片"
+                    android:textColor="@color/text_little_black"
+                    android:textSize="@dimen/sp_34px" />
+
+                <com.bhxx.xs_family.views.MyGridView
+                    android:id="@+id/my_addaction_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/photo"
+                    android:layout_marginBottom="@dimen/height_20px"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_grey"
+        android:text="提交" />
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.bhxx.xs_family.activity.PublishMoveoaFyActivity">
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_grey"
+        android:text="提交" />
+
+    <RelativeLayout
+        android:id="@+id/uploadPictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submit"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg"
+            />
+        <TextView
+            android:id="@+id/my_publishalbum_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:text="请添加费用报销图片"
+            android:textColor="@color/text_little_black"
+            android:textSize="@dimen/sp_34px" />
+
+        <com.bhxx.xs_family.views.MyGridView
+            android:id="@+id/my_album_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:layout_below="@id/my_publishalbum_photo"
+            android:layout_marginBottom="@dimen/height_20px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:stretchMode="columnWidth" >
+        </com.bhxx.xs_family.views.MyGridView>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/uploadPictureLayout"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:background="@color/com_grey_bg">
+
+            <ImageView
+                android:id="@+id/publish_moveoafy_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/com_left_right"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="费用报销"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_34px" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+
+        <RelativeLayout
+            android:id="@+id/publish_moveoafy_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120px">
+
+            <TextView
+                android:id="@+id/moveoa_fy_moneytv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_centerVertical="true"
+                android:text="报销数额"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_34px" />
+
+            <EditText
+                android:id="@+id/moveoa_fy_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入报销金额"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_30px"
+                android:layout_marginLeft="@dimen/height_30px"
+                android:layout_toRightOf="@id/moveoa_fy_moneytv"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="元"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_34px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+
+
+        <EditText
+            android:id="@+id/publish_moveoafy_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/com_left_right"
+            android:gravity="left|top"
+            android:textColor="@color/text_little_black"
+            android:hint="请输入报销理由"
+            android:textSize="@dimen/sp_34px"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

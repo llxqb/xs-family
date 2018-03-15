@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.bhxx.xs_family.activity.PublishMoveoaWpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/uploadPictureLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_title_height"
+            android:background="@color/com_grey_bg">
+
+            <ImageView
+                android:id="@+id/publish_moveoawp_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/com_left_right"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="教具申领"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_34px" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+
+        <RelativeLayout
+            android:id="@+id/publish_moveoawp_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120px">
+
+            <TextView
+                android:id="@+id/typetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_centerVertical="true"
+                android:text="教具类型"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_34px" />
+
+            <TextView
+                android:id="@+id/publish_moveoawp_typetv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="请选择教具类型"
+                android:textSize="@dimen/sp_30px"
+                android:layout_marginLeft="@dimen/height_40px"
+                android:layout_toRightOf="@id/typetv"
+                android:gravity="center_vertical"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:src="@mipmap/home_morearrow"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/publish_moveoaqj_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_128px">
+
+            <TextView
+                android:id="@+id/publish_moveoawp_countTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_centerVertical="true"
+                android:text="领取份数"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_34px" />
+
+            <EditText
+                android:id="@+id/publish_moveoawp_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/sp_30px"
+                android:layout_marginLeft="@dimen/height_40px"
+                android:layout_toRightOf="@id/publish_moveoawp_countTv"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textColor="@color/text_little_black"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:src="@mipmap/home_morearrow"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/height_30px"
+            android:background="@color/com_line_bg" />
+
+        <EditText
+            android:id="@+id/publish_moveoawp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginTop="@dimen/height_30px"
+            android:hint="请输入申请理由"
+            android:textColor="@color/text_little_black"
+            android:gravity="left|top"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:textSize="@dimen/sp_34px"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_grey"
+        android:text="提交" />
+
+    <RelativeLayout
+        android:id="@+id/uploadPictureLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@id/submit"
+        android:layout_marginTop="@dimen/com_left_right"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/com_line_bg"
+            />
+
+        <TextView
+            android:id="@+id/my_publishalbum_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:text="请添加教具申领图片"
+            android:textColor="@color/text_little_black"
+            android:textSize="@dimen/sp_34px" />
+
+        <com.bhxx.xs_family.views.MyGridView
+            android:id="@+id/my_album_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:layout_below="@id/my_publishalbum_photo"
+            android:layout_marginBottom="@dimen/height_20px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/height_20px"
+            android:stretchMode="columnWidth" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_300px">
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/height_300px"
+        android:src="@mipmap/default_avatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_42px"
+        android:paddingLeft="@dimen/height_30px"
+        android:paddingRight="@dimen/height_30px"
+        android:id="@+id/food_name"
+        android:alpha="0.8"
+        android:background="@drawable/food_name_bag"
+        android:layout_marginTop="@dimen/height_180px"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_24px"
+        android:text="11111111" />
+
+
+
+</RelativeLayout>

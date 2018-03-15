@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/app_grey"
+        android:gravity="center"
+        android:text="消息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+
+    <LinearLayout
+        android:id="@+id/conversation_sys_mess"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.bhxx.xs_family.views.CircleImageView
+            android:layout_width="@dimen/height_108px"
+            android:layout_height="@dimen/height_108px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:src="@mipmap/login_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:text="系统消息"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_34px" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/conversationlist"
+        android:name="io.rong.imkit.fragment.ConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_20px" />
+
+</LinearLayout>

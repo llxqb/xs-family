@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_grey_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/com_grey_bg" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/photo_album_chooseNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/photo_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="8dip"
+        android:numColumns="3"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="8dip"
+        android:scrollbars="none"
+        android:verticalSpacing="8dip" />
+
+</LinearLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_title_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/live1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/menu_rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_100px"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/fullscreenlin"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/com_left_right"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/fullscreenImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_60px"
+                                android:src="@mipmap/fullscreenbtn" />
+
+                            <TextView
+                                android:id="@+id/fullscreentv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全屏"
+                                android:textSize="@dimen/height_20px"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/playlin"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/fullscreenlin"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/playImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_60px"
+                                android:src="@mipmap/playbtn" />
+
+                            <TextView
+                                android:id="@+id/playtv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@+id/fullscreenImg"
+                                android:gravity="center"
+                                android:text="播放"
+                                android:textSize="@dimen/height_20px"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/liveTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/com_left_right"
+                            android:gravity="center"
+                            android:text="监控一"
+                            />
+
+                    </RelativeLayout>
+
+                    <com.hikvision.sdk.widget.CustomSurfaceView
+                        android:id="@+id/surfaceView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/menu_rel"
+                        android:background="@mipmap/monitorlogo" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/live2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/menu_rel2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_100px"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/fullscreenlin2"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/com_left_right"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/fullscreenImg2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_60px"
+                                android:src="@mipmap/fullscreenbtn" />
+
+                            <TextView
+                                android:id="@+id/fullscreentv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全屏"
+                                android:textSize="@dimen/height_20px"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/playlin2"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/fullscreenlin2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/playImg2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_60px"
+                                android:src="@mipmap/playbtn" />
+
+                            <TextView
+                                android:id="@+id/playtv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@+id/fullscreenImg"
+                                android:gravity="center"
+                                android:text="播放"
+                                android:textSize="@dimen/height_20px"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/liveTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/com_left_right"
+                            android:gravity="center"
+                            android:text="监控二"
+                            />
+
+                    </RelativeLayout>
+
+                    <com.hikvision.sdk.widget.CustomSurfaceView
+                        android:id="@+id/surfaceView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/menu_rel2"
+                        android:background="@mipmap/monitorlogo" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/live3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/menu_rel3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_100px"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/fullscreenlin3"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/com_left_right"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/fullscreenImg3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_60px"
+                                android:src="@mipmap/fullscreenbtn" />
+
+                            <TextView
+                                android:id="@+id/fullscreentv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全屏"
+                                android:textSize="@dimen/height_20px"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/playlin3"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/fullscreenlin3"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/playImg3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/height_60px"
+                                android:src="@mipmap/playbtn" />
+
+                            <TextView
+                                android:id="@+id/playtv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@+id/fullscreenImg"
+                                android:gravity="center"
+                                android:text="播放"
+                                android:textSize="@dimen/height_20px"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/liveTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/com_left_right"
+                            android:text="监控三"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+
+                    <com.hikvision.sdk.widget.CustomSurfaceView
+                        android:id="@+id/surfaceView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/menu_rel3"
+                        android:background="@mipmap/monitorlogo" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/live_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

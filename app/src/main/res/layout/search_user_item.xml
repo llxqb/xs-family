@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_108px"
+        >
+        <TextView
+            android:id="@+id/searchUser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_30px"
+            />
+
+        <TextView
+            android:id="@+id/searchUser_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:textColor="@color/text_little_black"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg"/>
+
+</LinearLayout>

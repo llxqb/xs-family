@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/height_40px"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:button="@null"
+            android:background="@drawable/checkbox_selector"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.bhxx.xs_family.views.CircleImageView
+            android:id="@+id/album_user_pic"
+            android:layout_width="@dimen/height_58px"
+            android:layout_height="@dimen/height_58px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/height_10px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/pic_ctiy_01" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/height_20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/album_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_3333"
+                android:textSize="@dimen/sp_32px" />
+
+
+            <TextView
+                android:id="@+id/album_user_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_yellow_bg"
+                android:padding="5dp"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp_18px"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_toRightOf="@id/album_user_name"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/album_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/album_user_name"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_20px" />
+
+            <TextView
+                android:id="@+id/album_user_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:background="@drawable/round_yellow_bg"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp_18px" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_30px">
+
+        <TextView
+            android:id="@+id/moveoaqj_check_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_left_right"
+            android:layout_marginRight="@dimen/com_left_right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_30px" />
+
+
+
+        <LinearLayout
+            android:id="@+id/qj_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moveoaqj_check_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:text="请假时间："
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/moveoaqj_check_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:text=""
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/sp_28px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/moveoa_qj_type_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qj_time"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:text="请假类型："
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_28px" />
+
+            <TextView
+                android:id="@+id/moveoaqj_check_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:text=""
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_28px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moveoa_qj_img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_210px"
+            android:layout_below="@id/moveoa_qj_type_layout"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/com_left_right"
+            android:paddingLeft="@dimen/com_left_right"
+            android:paddingRight="@dimen/com_left_right"
+            >
+            <ImageView
+                android:id="@+id/moveoa_qj_img1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+                android:id="@+id/moveoa_qj_img2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/height_20px"
+                />
+            <ImageView
+                android:id="@+id/moveoa_qj_img3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/height_20px"
+                />
+            <ImageView
+                android:id="@+id/moveoa_qj_img4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/height_20px"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/height_40px"
+        android:background="@color/com_line_bg" />
+</LinearLayout>

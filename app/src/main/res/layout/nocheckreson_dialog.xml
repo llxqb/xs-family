@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/com_left_right"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:background="@color/app_grey"
+                />
+
+            <Button
+                android:id="@+id/sure"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="确定"
+                android:background="@color/app_grey"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tvNoCheckReason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请填写不批准理由"
+            android:background="@null"
+            android:layout_above="@+id/btnlayout"
+            android:layout_marginBottom="@dimen/com_left_right"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

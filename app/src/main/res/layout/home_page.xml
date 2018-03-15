@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_grey_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/app_grey"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/parent_home_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:focusable="false"
+        android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

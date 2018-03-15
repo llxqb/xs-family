@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_white_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/apply_success_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/activity_sub_close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/activity_sub" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_28px"
+        android:text="您的报名已提交"
+        android:textColor="@color/text_6666"
+        android:textSize="@dimen/sp_34px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_22px"
+        android:text="感谢您的报名,我们会尽快与您联系"
+        android:textColor="@color/text_little_black"
+        android:textSize="@dimen/sp_24px" />
+
+    <TextView
+        android:id="@+id/apply_success_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80px"
+        android:layout_marginBottom="@dimen/height_20px"
+        android:layout_marginTop="@dimen/height_56px"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/text_7786"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

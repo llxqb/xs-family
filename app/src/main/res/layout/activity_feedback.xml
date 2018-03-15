@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_grey_bg">
+
+        <ImageView
+            android:id="@+id/feedback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+
+        <TextView
+            android:id="@+id/feedback_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:text="提交"
+            android:textColor="@color/app_grey"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_520px"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:layout_marginTop="@dimen/height_34px"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请填写您想反馈的问题,我们会在七个工作日内回复您"
+        android:textColor="@color/text_6666"
+        android:textSize="@dimen/sp_28px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:background="@color/com_line_bg" />
+
+    <EditText
+        android:id="@+id/feedback_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_86px"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="请输入您的联系邮箱,以方便我们联系"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text_6666"
+        android:textSize="@dimen/sp_28px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/com_left_right"
+        android:layout_marginRight="@dimen/com_left_right"
+        android:background="@color/com_line_bg" />
+</LinearLayout>

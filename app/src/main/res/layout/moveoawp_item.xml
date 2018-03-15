@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/moveoa_wp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/moveoa_wp_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_workdrop_down2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/moveoa_wp_right"
+            android:layout_marginRight="@dimen/height_30px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/height_30px"
+            >
+            <TextView
+                android:id="@+id/moveoa_wp_createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_22px"
+                />
+
+            <TextView
+                android:id="@+id/moveoa_wp_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_toRightOf="@id/moveoa_wp_createtime"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_22px"
+                />
+
+            <TextView
+                android:id="@+id/moveoa_wp_desction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="给学生发放文具，望批准"
+                android:layout_below="@id/moveoa_wp_createtime"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_marginLeft="@dimen/com_left_right"
+                />
+
+            <TextView
+                android:id="@+id/moveoa_wp_typetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_below="@id/moveoa_wp_desction"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_22px"
+                android:text="申领类别："
+                />
+            <TextView
+                android:id="@+id/moveoa_wp_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moveoa_wp_desction"
+                android:layout_toRightOf="@id/moveoa_wp_typetv"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="@dimen/height_30px"
+                android:textSize="@dimen/sp_22px"
+                android:text="文具"
+                />
+
+            <TextView
+                android:id="@+id/moveoa_wp_counttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height_40px"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_toRightOf="@id/moveoa_wp_type"
+                android:textColor="@color/text_little_black"
+                android:textSize="@dimen/sp_22px"
+                android:layout_below="@id/moveoa_wp_desction"
+                android:text="申领人数："
+                />
+            <TextView
+                android:id="@+id/moveoa_wp_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_toRightOf="@id/moveoa_wp_counttv"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp_22px"
+                android:text="88"
+                android:layout_below="@id/moveoa_wp_desction"
+                />
+            <TextView
+                android:id="@+id/moveoa_wp_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_yellow_bg"
+                android:padding="5dp"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp_18px"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:paddingBottom="@dimen/com_left_right"
+                android:layout_below="@id/moveoa_wp_typetv"
+                />
+
+            <RelativeLayout
+                android:id="@+id/moveoa_wp_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moveoa_wp_state"
+                android:layout_marginTop="@dimen/height_30px"
+                android:layout_marginLeft="@dimen/com_left_right"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:id="@+id/moveoa_fy_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/moveoa_relayout"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="@dimen/com_left_right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height_20px"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.bhxx.xs_family.views.CircleImageView
+                                    android:layout_width="@dimen/height_20px"
+                                    android:layout_height="@dimen/height_20px"
+                                    android:src="@color/app_grey" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0.5dp"
+                                    android:background="@color/com_line_bg"></View>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.bhxx.xs_family.views.CircleImageView
+                                    android:layout_width="@dimen/height_20px"
+                                    android:layout_height="@dimen/height_20px"
+                                    android:src="@color/yellow" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0.5dp"
+                                    android:background="@color/com_line_bg"></View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <com.bhxx.xs_family.views.CircleImageView
+                                    android:layout_width="@dimen/height_20px"
+                                    android:layout_height="@dimen/height_20px"
+                                    android:src="@color/green" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/height_20px"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="已提交"
+                                android:textSize="@dimen/sp_22px"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="待批准"
+                                android:textSize="@dimen/sp_22px"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="已批准"
+                                android:textSize="@dimen/sp_22px"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="2016.08.08 17:20"
+                                android:textSize="@dimen/sp_22px"
+                                android:textColor="@color/text_little_black"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="2016.08.08 17:20"
+                                android:textSize="@dimen/sp_22px"
+                                android:textColor="@color/text_little_black"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="2016.08.08 17:20"
+                                android:textSize="@dimen/sp_22px"
+                                android:textColor="@color/text_little_black"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg"/>
+</LinearLayout>

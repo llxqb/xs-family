@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/album_report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px"
+        android:background="@null"
+        android:gravity="center"
+        android:text="举报"
+        android:textColor="@color/text_7786"
+        android:textSize="@dimen/sp_28px" />
+
+    <Button
+        android:id="@+id/album_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px"
+        android:background="@null"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/text_7786"
+        android:textSize="@dimen/sp_28px"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px"
+        android:background="@null"
+        android:gravity="center"
+        android:text="分享"
+        android:textColor="@color/text_7786"
+        android:textSize="@dimen/sp_28px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/album_share_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/height_15px"
+                android:src="@mipmap/share_qq" />
+
+            <ImageView
+                android:id="@+id/album_share_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/height_15px"
+                android:src="@mipmap/share_wx" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_10px"
+        android:background="@color/com_grey_bg" />
+
+    <Button
+        android:id="@+id/album_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@null"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/text_6666"
+        android:textSize="@dimen/sp_28px" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/act_apply_bt"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_90px"
+    android:background="@color/app_grey"
+    android:text="即刻报名"
+    android:textColor="@color/white"
+    android:textSize="@dimen/sp_34px" />

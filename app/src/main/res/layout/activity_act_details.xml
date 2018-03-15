@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/com_grey_bg">
+
+        <ImageView
+            android:id="@+id/act_details_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/com_left_right"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="活动详情"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_34px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/com_line_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_480px">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/act_detail_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/act_detail_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/height_16px"
+                    android:orientation="horizontal"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_left_right"
+                android:layout_marginRight="@dimen/com_left_right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/act_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_30px"
+                    android:textColor="@color/text_3333"
+                    android:textSize="@dimen/sp_34px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="截止日期："
+                        android:textColor="@color/text_6666"
+                        android:textSize="@dimen/sp_20px" />
+
+                    <TextView
+                        android:id="@+id/act_details_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_6666"
+                        android:textSize="@dimen/sp_20px" />
+
+                    <TextView
+                        android:id="@+id/act_details_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/height_80px"
+                        android:textColor="@color/text_6666"
+                        android:textSize="@dimen/sp_20px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_70px"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="@dimen/sp_34px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/app_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/height_15px"
+                        android:text="关于活动"
+                        android:textColor="@color/app_grey"
+                        android:textSize="@dimen/sp_34px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:background="@color/com_line_bg" />
+
+                <TextView
+                    android:id="@+id/act_details_about_act"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/height_40px"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_26px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_70px"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="@dimen/sp_34px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/app_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/height_15px"
+                        android:text="行程安排"
+                        android:textColor="@color/app_grey"
+                        android:textSize="@dimen/sp_34px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:background="@color/com_line_bg" />
+
+                <TextView
+                    android:id="@+id/act_details_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/height_40px"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_26px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/height_70px"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="@dimen/sp_34px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/app_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/height_15px"
+                        android:text="报名须知"
+                        android:textColor="@color/app_grey"
+                        android:textSize="@dimen/sp_34px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/height_20px"
+                    android:background="@color/com_line_bg" />
+
+                <TextView
+                    android:id="@+id/act_details_must_know"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/height_40px"
+                    android:textColor="@color/text_6666"
+                    android:textSize="@dimen/sp_26px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/act_apply_bt" />
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_grey"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/height_460px"
+        android:layout_height="@dimen/height_460px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_160px"
+        android:src="@mipmap/login_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_40px"
+        android:text="希盛国际幼儿园"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_42px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_30px"
+        android:alpha="0.5"
+        android:text="正在启动..."
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_28px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120px"
+        android:layout_marginTop="@dimen/height_60px"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/monitored_jy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_20px"
+                android:alpha="0.5"
+                android:text="静音"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/monitored_ysq_pre" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_20px"
+                android:alpha="0.5"
+                android:text="扬声器"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/monitored_sq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_20px"
+                android:alpha="0.5"
+                android:text="收起"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_24px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--关闭 -->
+    <Button
+        android:id="@+id/monitor_close"
+        android:layout_width="@dimen/height_440px"
+        android:layout_height="@dimen/height_90px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_70px"
+        android:background="@drawable/yellow_bt"
+        android:text="点击播放"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_34px" />
+</LinearLayout>

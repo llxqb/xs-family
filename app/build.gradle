@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.bhxx.xs_family"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0.0"
+
+        ndk {
+            abiFilters "armeabi", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':IMKit')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.prolificinteractive:material-calendarview:1.4.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+}

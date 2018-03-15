@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/com_left_right"
+    android:layout_marginRight="@dimen/com_left_right"
+    android:background="@color/white"
+    android:paddingTop="@dimen/height_20px">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_88px"
+        android:background="@color/f8f8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="时间"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_28px" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/com_line_bg" />
+
+        <TextView
+            android:id="@+id/schedule_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:textColor="@color/text_3333"
+            android:textSize="@dimen/sp_28px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/com_line_bg" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/com_line_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/com_line_bg" />
+
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/com_line_bg" />
+</RelativeLayout>
